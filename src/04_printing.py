@@ -12,6 +12,15 @@ z = "I like turtles!"
 # y, and z:
 # x is 10, y is 2.25, z is "I like turtles!"
 
+
+def printf(format, *values):
+    print(format % values)
+
+
+printf("printf: %d, %.5f, %s", x, y, z)
+
 # Use the 'format' string method to print the same thing
+print("format: {x:d}, {y:.5f}, {z:s}".format(x=x, y=y, z=z))
 
 # Finally, print the same thing using an f-string
+print(f"f-strings: {x}, {y}, {z}")
